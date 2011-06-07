@@ -13,6 +13,12 @@ requires 'Catalyst::Runtime' => '5.80030';
 requires 'Catalyst::Plugin::ConfigLoader';
 requires 'Catalyst::Plugin::Static::Simple';
 requires 'Catalyst::Action::RenderView';
+requires 'Catalyst::Controller::REST';
+requires 'Archive::Extract';
+requires 'CPAN::Mini::Inject';
+requires 'File::Find::Rule';
+requires 'List::MoreUtils';
+requires 'Parse::CPAN::Meta';
 requires 'Moose';
 requires 'namespace::autoclean';
 requires 'Config::General'; # This should reflect the config file format you've chosen
