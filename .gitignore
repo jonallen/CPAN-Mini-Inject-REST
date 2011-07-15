@@ -1,2 +1,7 @@
 /inc/
 CPAN-Mini-Inject-REST-*.tar.gz
+/blib/
+/Makefile
+/MANIFEST
+/META.yml
+/pm_to_blib
