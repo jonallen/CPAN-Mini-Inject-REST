@@ -6,9 +6,10 @@ use CPAN::Mini::Inject;
 BEGIN { extends 'Catalyst::Model'; }
 
 sub COMPONENT {
-    my ($self, $c) = $_;
+    my ($class, $c, $args) = @_;
     
-    return CPAN::Mini::Inject->new->loadcfg($self->{config_file})->parsecfg;
+    $args = $class->merge_config_hashes($class->config, $args);
+    return CPAN::Mini::Inject->new->loadcfg($args->{config_file})->parsecfg;
 }
 
 1;
