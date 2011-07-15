@@ -14,6 +14,8 @@ requires 'Catalyst::Plugin::ConfigLoader';
 requires 'Catalyst::Plugin::Static::Simple';
 requires 'Catalyst::Action::RenderView';
 requires 'Catalyst::Controller::REST';
+requires 'JSON';
+requires 'Catalyst::Action::Serialize::JSON';
 requires 'Archive::Extract';
 requires 'CPAN::Mini::Inject';
 requires 'File::Find::Rule';
